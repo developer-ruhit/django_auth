@@ -3,6 +3,13 @@ import re
 from django.contrib.auth import get_user_model
 user = get_user_model()
 
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = user
+
+        fields = ("first_name","last_name","email","image",)
 class UserCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = user 
@@ -51,7 +58,8 @@ class UserCreateSerializer(serializers.ModelSerializer):
 
         return value
 
-        
+
+
 
 class UserDetailSerializer(serializers.ModelSerializer):
     class Meta:
