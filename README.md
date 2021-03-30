@@ -2,7 +2,7 @@
 
 Hi,
 
-I had created this project a long back while learning Django....but uploaded recently in now in github......
+I had created this project a long back while learning Django....but uploaded recently in github......
 
 The project includes the following views:
 
